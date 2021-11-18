@@ -1,0 +1,82 @@
+@import "./custom.scss";
+
+.tooltipWrapper {
+  display: inline-block;
+  position: relative;
+
+  .tooltipIcon{
+    padding: 5px;
+  }
+
+  .tooltipExplanation {
+    display: none;
+    width: 12vw;
+    position: absolute;
+    top: $distance-smallest;
+    left: $distance-smaller;
+    padding: $distance-smaller;
+    font-size: $font-size-smallest;
+    font-weight: 400;
+    color: $body-bg;
+    background: $tooltipBackgroundColor;
+    border-radius: $distance-smallest;
+    transform: translate(-50%, calc(-100% - 10px));
+
+    .tooltipText {
+      position: relative;
+    }
+
+    .arrow {
+      position: absolute;
+      width: $distance-smaller;
+      height: $distance-smaller;
+      background: $tooltipBackgroundColor;
+    }
+  }
+
+  .top {
+    transform: translate(-50%, calc(-100% - 10px));
+
+    .arrow {
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%) rotate(-45deg);
+    }
+  }
+
+  .right {
+    transform: translate(calc(15% - 10px), calc(-50% + 5px));
+
+    .arrow {
+      top: 50%;
+      left: 50%;
+      transform: translate(calc(-120% - 85px), -50%) rotate(-45deg);
+    }
+  }
+
+  .bottom {
+    transform: translate(-50%, calc(50% - 5px));
+
+    .arrow {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  .left {
+    transform: translate(calc(-100% - 20px), calc(-50% + 5px));
+
+    .arrow {
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%) rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    .tooltipExplanation {
+      display: block;
+    }
+  }
+}

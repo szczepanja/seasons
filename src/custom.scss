@@ -1,0 +1,77 @@
+// Override default variables before the import
+$body-bg: #fff;
+$primary: #2f82ba;
+$input-icon-background: #e9ecef;
+$input-border: #ced4da;
+$primary-dark: #1b4968;
+$primary-faded: #949da2;
+$primary-faded-transparent: rgba(148, 157, 162, 0.4);
+$success: #88d8b0;
+$failure: #ff6f69;
+$inProgress: #ffcc5c;
+$pending: #2f82ba;
+$killed: #ac69ff;
+$successTextColor: #283f33;
+$failureTextColor: #fff;
+$inProgressTextColor: #50401d;
+$pendingTextColor: #fff;
+$killedTextColor: #fff;
+$header-background: rgb(248, 249, 250);
+$tree-menu-header-color: #eaf3f8;
+$transparent: #ffffff00;
+$list-color: rgb(230, 230, 230, 0.5);
+$list-color-faded: rgb(230, 230, 230, 0.75);
+$tooltipBackgroundColor: rgb(0, 0, 0);
+
+$distance-smallest: 5px;
+$distance-smaller: 10px;
+$distance-medium: 16px;
+$distance-big: 35px;
+
+$basic-border-type: 1px solid;
+
+$border-radius-small: 4px;
+
+$font-size-bigger: 1.2rem;
+$font-size-big: 1.1rem;
+$font-size-normal: 1rem;
+$font-size-smaller: 0.9rem;
+$font-size-smallest: 0.8rem;
+
+$shadow-light: 3px 3px 6px rgb(127 160 183 / 17%);
+$input-shadow: 0 0 6px #2f82ba;
+$shadow-light-vertical: 0px 3px 6px rgb(127 160 183 / 17%);
+
+.success {
+  background-color: $success;
+  color: $successTextColor;
+}
+
+.inProgress {
+  background-color: $inProgress;
+  color: $inProgressTextColor;
+}
+
+.pending {
+  background-color: $pending;
+  color: $pendingTextColor;
+}
+
+.failed {
+  background-color: $failure;
+  color: $failureTextColor;
+}
+
+.killed {
+  background-color: $killed;
+  color: $killedTextColor;
+}
+
+.link {
+  color: $primary;
+  border-bottom: $basic-border-type $primary;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

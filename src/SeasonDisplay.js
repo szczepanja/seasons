@@ -1,5 +1,8 @@
 import React from 'react'
+import Clock from './Clock'
 import './SeasonDisplay.css'
+import Tooltip from './Tooltip'
+import * as Icon from 'react-bootstrap-icons'
 
 const seasonConfig = {
   summer: {
@@ -28,6 +31,14 @@ const SeasonDisplay = (props) => {
     <div className={`season-display ${season}`}>
       <i className={`icon-left massive ${iconName} icon`} />
       <h1>{text}</h1>
+      <div>
+        <Clock />
+      </div>
+      <Tooltip
+        text="Here is the current time"
+        children={<Icon.ExclamationCircle />}
+        direction="right"
+      />
       <i className={`icon-right massive ${iconName} icon`} />
     </div>
   )

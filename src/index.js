@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom'
 import Loader from './Loader'
 import SeasonDisplay from './SeasonDisplay'
 
-if (module.hot) {
-  module.hot.accept()
-}
-
 class App extends React.Component {
   state = { lat: null, errorMessage: '' }
 
